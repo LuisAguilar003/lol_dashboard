@@ -25,7 +25,12 @@ SECRET_KEY = 'django-insecure-w$&48^@=keg11i+!h*@9*l+*wq5_@idvf^m^+j9-gg15vri*@7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "localhost",
+    "127.0.0.1",
+    "lol-dashboard.onrender.com"
+]
+
 
 
 # Application definition
@@ -50,7 +55,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'lol_dashboard.urls'
+ROOT_URLCONF = "config.urls"
 
 TEMPLATES = [
     {
@@ -67,7 +72,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'lol_dashboard.wsgi.application'
+WSGI_APPLICATION = "config.wsgi.application"
 
 
 DATABASES = {
