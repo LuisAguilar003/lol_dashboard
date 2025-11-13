@@ -1,1 +1,1 @@
-web: gunicorn lol_dashboard.wsgi
+web: gunicorn lol_dashboard.lol_dashboard.wsgi:application
