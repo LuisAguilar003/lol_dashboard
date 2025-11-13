@@ -1,0 +1,1 @@
+web: gunicorn lol_dashboard.wsgi
